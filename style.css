@@ -151,6 +151,17 @@ section h1 p {
   font-size: 1.5rem;
 }
 
+.aboutmepage {
+  display: flex;
+  text-align: left;
+  font-size: 2rem;
+  color: black;
+}
+
+.content {
+  margin: 10rem 0 0 10rem;
+}
+
 /*  
 section#home {
   background: url('https://source') no repeat center center /
