@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linen;
+  color: lightblue;
+  line-height: 1.6;
+  height: 100vh;
+  font-size: 1.8rem;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /*CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  /*display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 0.5fr; */
+  margin: 10px 0 auto;
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0);
+}
+
+.logo {
+  /* logo */
+  width: 350px;
+}
+
+/* new burger stuff */
+.nav {
+  border-bottom: 1px solid #eaeaeb;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+}
+.menu {
+  margin: 0 10px;
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: lightsalmon;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.menu a:hover {
+  color: lightblue;
+}
+
+label {
+  font-size: 26px;
+  line-height: 70px;
+  width: 70px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+/* old burger stuff
+
+nav {
+  background: rgba(0, 0, 0, 0);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  text-align: center;
+  margin: 5px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: lightsalmon;
+}
+
+nav ul li a:hover {
+  color: lightblue;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: lightsalmon;
+  margin: 5px;
+} */
+
+.videowrapper {
+  position: relative;
+  height: 56vh;
+  width: 100vh;
+}
+
+.videowrapper iframe {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  font-family: "Gaegu", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section h1 p {
+  font-size: 1.5rem;
+}
+
+/*  
+section#home {
+  background: url('https://source') no repeat center center /
+  cover; 
+
+section#about {
+
+*/
+
+@media screen and (max-width: 830px) {
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr; */
+    margin: 10px 32px auto;
+    position: fixed;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  /* new burger stuff */
+
+  label {
+    margin: 0 0 0 45%;
+    display: block;
+    cursor: pointer;
+  }
+  .nav {
+    margin: 0 auto;
+  }
+  .menu {
+    background-color: rgba(246, 164, 157, 0.7);
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    color: linen;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0 auto;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  /* old burger stuff
+  .menu {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: 92vh;
+    top: 8vh;
+    background-color: linen;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  /*.burger {
+    display: block;
+  } */
+}
+
+/* old burger stuff
+.nav-active {
+  transform: translateX(0%);
+} */
