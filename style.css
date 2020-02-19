@@ -118,6 +118,18 @@ section h1 p {
   color: black;
 }
 
+.content {
+  padding: 5% 0 0 5%;
+}
+
+.content h1 {
+  color: lightblue;
+  text-align: center;
+}
+.content p {
+  color: black;
+}
+
 .page-container {
   position: relative;
   min-height: 100vh;
